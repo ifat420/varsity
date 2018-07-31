@@ -1,0 +1,57 @@
+@function tint($color, $percentage) {
+    @return mix(white, $color, $percentage);
+}
+
+@function shade($color, $percentage) {
+    @return mix(black, $color, $percentage);
+} 
+
+@function set-text-color($color) {
+
+    @if (lightness( $color ) > 60) {
+        @return black;
+    }
+    @else {
+        @return white;
+    }
+    
+}
+ 
+// $color-shadow: #fff; 
+$color-accent: #DE2014;
+$color-primary: #38324A;
+
+$color-background: tint($color-primary, 90% );
+$color-background-shade: shade($color-primary, 20% );
+$color-background-invert: $color-primary; 
+
+
+$color-text: #2E2C2D;
+$color-text-weak: #3B3738;;
+$color-text-strong: #201E1F;
+
+// $color-text-heading: $t-heading;
+
+//$color-text-invert: rgba($color-background, .75);
+//$color-text-strong-invert: $color-background; 
+$color-text-invert:#e7edf5; 
+$color-text-strong-invert:#fcfcfc;
+$color-text-weak-invert: rgba(222, 229, 238, 0.815);
+
+$color-border: tint($color-primary, 10% );
+
+@if set-text-color($color-primary) == black {
+    $color-text-invert: #2E2C2D;
+    $color-text-strong-invert: #201E1F;
+    $color-text-weak-invert: #3B3738;
+    $color-border: shade($color-primary, 20% );
+}
+
+$color-text-link: $color-primary;
+$color-text-link-visited: #fff;
+$color-text-link-hover: $color-accent;
+
+
+//other
+$sidebar-width: 25rem;
+$header-height: 0rem;

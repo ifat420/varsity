@@ -11,12 +11,22 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "nuxt": "^1.0.0",
+    "@fortawesome/fontawesome": "^1.1.8",
+    "@fortawesome/fontawesome-free-brands": "^5.0.13",
+    "@fortawesome/fontawesome-free-regular": "^5.0.13",
+    "@fortawesome/fontawesome-free-solid": "^5.0.13",
+    "@nuxtjs/axios": "^5.0.0",
+    "bootstrap": "^4.1.1",
     "express": "^4.15.3",
-    "@nuxtjs/axios": "^5.0.0"
+    "jquery": "^3.3.1",
+    "nuxt": "^1.0.0",
+    "popper.js": "^1.14.3",
+    "vue-moment": "^4.0.0"
   },
   "devDependencies": {
     "cross-env": "^5.0.1",
-    "nodemon": "^1.11.0"
+    "node-sass": "^4.9.2",
+    "nodemon": "^1.11.0",
+    "sass-loader": "^7.0.3"
   }
 }

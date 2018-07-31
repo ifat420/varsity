@@ -1,59 +1,37 @@
 <template>
-  <section class="container">
-    <div>
-      <logo/>
-      <h1 class="title">
-        University
-      </h1>
-      <h2 class="subtitle">
-        Official Website of Jessore University of Science and Technology
-      </h2>
-      <div class="links">
-        <a href="https://nuxtjs.org/" target="_blank" class="button--green">Documentation</a>
-        <a href="https://github.com/nuxt/nuxt.js" target="_blank" class="button--grey">GitHub</a>
-      </div>
-    </div>
+  <section class="">
+     <app-hero/>
+     <div class="container-fluid">
+        <div class="row mt-5">
+            <div class="section col-8">
+                <app-news/>
+                <app-workshop/>
+            </div>
+            <div class="col-4">
+                <app-notice/>
+            </div>
+        </div>
+     </div> 
   </section>
 </template>
 
-<script>
-import Logo from '~/components/Logo.vue'
-
+<script> 
+import hero from '~/components/home_hero'
+import news from '~/components/home_news'
+import notice from '~/components/home_notice_board'
+import workshop from '~/components/home_workshop'
 export default {
-  components: {
-    Logo
-  }
+    layout: 'just',
+    components: {
+        'app-hero': hero,
+        'app-news': news,
+        'app-notice': notice,
+        'app-workshop': workshop,
+    },
+    created() {
+        console.log(this);
+    }
 }
 </script>
 
-<style>
-.container
-{
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-.title
-{
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-.subtitle
-{
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-.links
-{
-  padding-top: 15px;
-}
-</style>
+ 

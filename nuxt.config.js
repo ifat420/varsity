@@ -1,4 +1,5 @@
 const pkg = require('./package')
+const webpack = require('webpack')
 
 module.exports = {
   mode: 'spa',
@@ -27,12 +28,16 @@ module.exports = {
   ** Global CSS
   */
   css: [
+    'bootstrap/dist/css/bootstrap.css'
   ],
 
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
+    // '~plugins/bootstrap.js',
+    { src: '~plugins/fontAwesome.js', ssr: false },
+    { src: '~plugins/moment.js' }, 
   ],
 
   /*
@@ -40,7 +45,7 @@ module.exports = {
   */
   modules: [
     // Doc: https://github.com/nuxt-community/axios-module#usage
-    '@nuxtjs/axios'
+    '@nuxtjs/axios', 
   ],
   /*
   ** Axios module configuration
@@ -56,8 +61,18 @@ module.exports = {
     /*
     ** You can extend webpack config here
     */
-    extend(config, ctx) {
+    // extend(config, ctx) {
       
-    }
+    // },
+    vendor: [],
+    // vendor: ['jquery', 'bootstrap'],
+    // plugins: [
+    //   // set shortcuts as global for bootstrap
+    //   new webpack.ProvidePlugin({
+    //     $: 'jquery',
+    //     jQuery: 'jquery',
+    //     'window.jQuery': 'jquery'
+    //   })
+    // ]
   }
 }
