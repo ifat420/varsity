@@ -2,7 +2,7 @@
     <div class="container-fluid footer">
         <div class="row">
             <div class="col footer__social d-flex justify-content-start align-items-center">
-                <h3>follow us</h3>
+                <h3>follow with us</h3>
                 <div class="footer__social--links">
                     <a href="#">
                         <i class="fab fa-facebook fa-1x"></i>

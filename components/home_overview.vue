@@ -1,16 +1,4 @@
-<template>
-    <!-- <div class="container-fluid p-0">
-        <div class="row no-gutters overview-wrapper">
-            <div class="col-5">
-                <div class="overview">
-                    <span class="overview__title">A brief overview</span>
-                    <span class="overview__text">
-                        {{ overview }}
-                    </span>
-                </div>
-            </div>
-        </div>
-    </div> -->
+<template> 
     <div class="container-fluid p-0">
         <div class="row no-gutters overview-wrapper">
             <div class="col-1">  

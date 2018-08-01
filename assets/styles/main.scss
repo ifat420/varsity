@@ -259,22 +259,20 @@ a {
     // background: $color-background-invert;
     background: linear-gradient(90deg, $color-gradient-overview-top 0%, $color-gradient-overview-top 20%, $color-background 20%);
     background-size: cover;
-    padding: 4.5rem 1.5rem;
-    & .col-1 {
-        // border-left: 1px solid #fff;
-    }
+    padding: 4.5rem 1.5rem; 
     .overview {  
         color: $color-text;
         &__side {
-            text-transform: uppercase;
+            text-transform: capitalize;
             color: $color-text-invert;
             font-size: $font-size-reg;
             writing-mode: vertical-rl;
             transform: rotate(180deg);
             text-align: right;
             display: block;
-            position: relative; 
-            bottom: 0;  
+            position: absolute;
+            bottom: 0;
+            left: 0;
         }
         &__title {
             font-size: $font-size-header-big;
@@ -306,7 +304,7 @@ a {
         padding: 3.5rem 0rem 1.5rem;
     }
     &__social {
-        background: $color-background; 
+        background: $color-accent; 
         padding-top: 2.5rem;
         padding-bottom: 2.5rem;
         & h3 {
@@ -320,6 +318,10 @@ a {
                 margin-left: 2.5rem;
                 display: inline-block;
                 font-size: 2.6rem;
+
+                &:hover {
+                    color: $color-text-invert;
+                }
             }
         }
     }
