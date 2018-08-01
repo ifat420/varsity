@@ -1,5 +1,5 @@
 <template>
-    <div class="section__news">
+    <div class="newswrapper__news">
         <div class="cheading">
             <span class="cheading--main">
                 Latest News
@@ -30,25 +30,25 @@ export default {
         return {
             news: [
                 {
-                    src: 'http://loremflickr.com/400/400',
+                    src: '/07.jpg',
                     link: '#',
-                    heading: 'there is no heading',
+                    heading: 'laborumSunt non sunt exercitation ex',
                     time: Date.now()
                 },
                 {
-                    src: 'http://loremflickr.com/400/400',
+                    src: '/14.jpg',
                     link: '#',
-                    heading: 'there is no heading',
+                    heading: 'consectetur et cupidatat cillum cupidatat dui',
                     time: Date.now()
                 },
                 {
-                    src: 'http://loremflickr.com/400/400',
+                    src: '/2.jpg',
                     link: '#',
-                    heading: 'there is no heading',
+                    heading: 'Veniam laborum tempor labore non laborumSun exe',
                     time: Date.now()
                 },
                 {
-                    src: 'http://loremflickr.com/400/400',
+                    src: '/09.jpg',
                     link: '#',
                     heading: 'there is no heading',
                     time: Date.now()

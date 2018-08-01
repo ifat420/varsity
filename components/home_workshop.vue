@@ -1,5 +1,5 @@
 <template>
-    <div class="section__workshop">
+    <div class="newswrapper__workshop">
         <div class="cheading">
             <span class="cheading--main">
                 Workshops and Seminars
@@ -30,25 +30,25 @@ export default {
         return {
             news: [
                 {
-                    src: 'http://loremflickr.com/400/400',
+                    src: '/09.jpg',
                     link: '#',
-                    heading: 'there is no heading',
+                    heading: 'Engineering Workshop – 2018 Organized by ChE',
                     time: Date.now()
                 },
                 {
-                    src: 'http://loremflickr.com/400/400',
+                    src: '/06.jpg',
                     link: '#',
-                    heading: 'there is no heading',
+                    heading: 'Seminar on – Jute and Jute Industries”',
                     time: Date.now()
                 },
                 {
-                    src: 'http://loremflickr.com/400/400',
+                    src: '/12.jpg',
                     link: '#',
-                    heading: 'there is no heading',
+                    heading: 'Workshop on – Recent Trends in Biotechnology',
                     time: Date.now()
                 },
                 {
-                    src: 'http://loremflickr.com/400/400',
+                    src: '/12.jpg',
                     link: '#',
                     heading: 'there is no heading',
                     time: Date.now()

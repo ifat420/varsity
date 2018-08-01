@@ -9,7 +9,8 @@ html {
 body {  
     margin: auto; 
     font-family: 'Roboto', sans-serif; 
-    background-color: #f5f6fa;
+    // background-color: #f5f6fa;
+    // background-color: $color-background;
 }
 
 a {
@@ -103,37 +104,45 @@ a {
 }
 
 .hero {
-    height: 100vh; 
-    background: linear-gradient(180deg, rgba(9,9,121,1) 0%, rgba(9,9,121,0) 60%),  url('~/static/mountain.jpg') no-repeat;
+    height: 100vh;  
+    background: linear-gradient(180deg, $color-gradient-top 0%, transparent 40%), 
+                linear-gradient(0deg, $color-gradient-bottom 0%, transparent 30%), 
+                url('~/static/44.jpg') no-repeat;
+    // background-attachment: fixed;
     background-size: cover;
-    padding: 1.5rem;
-
-    &__wrapper {
-        margin-top: 45vh; 
-        background: transparent;
+    padding: 1.5rem;  
+    &__wrapper { 
+        margin-bottom: 1.5rem;
     }
 }
 
 .c-card {
     display: inline-block;
-    background: transparent;
-    margin-right: 2.5rem;
+    background: transparent;  
     &__img img {
-        width: 300px;
+        width: 100%;
         height: 200px;
         object-fit: cover;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        margin-bottom: 1.5rem;
     }
     &__text {
         &--heading {
-            // font-size: $font-size-content-heading;
-            margin-top: 1.5rem;
-            display: block;
-            color: $color-text;
+            font-size: $font-size-header-big;
+            // margin-top: 1.5rem;
+            display: inline;
+            color: $color-text-invert;
+            text-transform: uppercase;
+            font-weight: 500;
+            background: rgba(36, 37, 37, 0.685);
         }
         &--link {
+            display: inline-block;
             margin-top: 1rem;
-            font-size: 1.4rem;
-
+            font-size: $font-size-reg;
+            color: $color-text-invert;
+            text-transform: capitalize;
+            font-style: italic;
         }
     }
 }
@@ -169,12 +178,15 @@ a {
             display: block;
             font-size: $font-size-small;
             font-size: $font-size-small;
-            color: rgb(163, 162, 162);
+            color: rgba(30, 30, 30, 0.7);
+            font-weight: 400;
             margin-top: 1rem;
         }
         &--heading {
             display: block;
             font-size: $font-size-header-small;
+            color: $color-text-weak;
+            font-weight: 500;
             margin-top: .5rem;
             text-transform: uppercase;
         }
@@ -229,22 +241,86 @@ a {
     }
 }
 
+.home-gallery-wrapper {
+    overflow: hidden;
+    width: 100%;
+    height: 25rem;
+}
+.home-gallery {
+    height: 100%;
+    display: inline-block; 
+    &__img {
+        height: 100%;
+        width: auto;
+    }
+}
+
+.overview-wrapper {
+    // background: $color-background-invert;
+    background: linear-gradient(90deg, $color-gradient-overview-top 0%, $color-gradient-overview-top 20%, $color-background 20%);
+    background-size: cover;
+    padding: 4.5rem 1.5rem;
+    & .col-1 {
+        // border-left: 1px solid #fff;
+    }
+    .overview {  
+        color: $color-text;
+        &__side {
+            text-transform: uppercase;
+            color: $color-text-invert;
+            font-size: $font-size-reg;
+            writing-mode: vertical-rl;
+            transform: rotate(180deg);
+            text-align: right;
+            display: block;
+            position: relative; 
+            bottom: 0;  
+        }
+        &__title {
+            font-size: $font-size-header-big;
+            text-transform: uppercase;
+            display: block;
+            margin-bottom: 1.5rem;
+        }
+        &__text {
+            font-size: $font-size-reg;
+            line-height: 2.4rem;
+        }
+        &__img {
+            &--img {
+                width: 100%;
+                height: 40rem;
+                object-fit: cover;
+            }
+        }
+    }
+
+}
+
+
 .footer {
     font-size: $font-size-reg;
-    background: #ccc;
+    background: $color-background; 
     &__body {
         background: $color-background-invert;
         padding: 3.5rem 0rem 1.5rem;
     }
     &__social {
-        background: $color-background;
-        
-        padding-top: 3.5rem;
+        background: $color-background; 
+        padding-top: 2.5rem;
         padding-bottom: 2.5rem;
         & h3 {
             font-size: $font-size-header-big;
-            margin: 0;
+            margin: 0 2.5rem 0 0;
             text-transform: uppercase;
+        }
+        &--links {
+            font-size: $font-size-header-big;
+            & a {
+                margin-left: 2.5rem;
+                display: inline-block;
+                font-size: 2.6rem;
+            }
         }
     }
     &__info {
@@ -297,8 +373,8 @@ a {
     }
 }
 
-.section { 
-    margin-bottom: 10rem;
+.newswrapper { 
+    margin-bottom: 5rem;
     &__news {
         padding-bottom: 3rem;
         margin-bottom: 2rem;

@@ -18,8 +18,8 @@
 }
  
 // $color-shadow: #fff; 
-$color-accent: #DE2014;
-$color-primary: #38324A;
+$color-accent: #00BDD4;
+$color-primary: #273c75;
 
 $color-background: tint($color-primary, 90% );
 $color-background-shade: shade($color-primary, 20% );
@@ -52,6 +52,7 @@ $color-text-link-visited: #fff;
 $color-text-link-hover: $color-accent;
 
 
-//other
-$sidebar-width: 25rem;
-$header-height: 0rem;
+ 
+
+$color-gradient-overview-top: rgba($color-background-invert, 1);
+$color-gradient-overview-bottom: rgba($color-background-shade, 1);

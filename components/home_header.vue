@@ -1,13 +1,13 @@
 <template>
     <div class="container-fluid">
         <div class="row header">
-            <div class="col-4 header__logo">
+            <div class="col-3 header__logo">
                 <nuxt-link to="/">
                     <img src="/just.png" alt="" class="header__logo--img">
                 </nuxt-link> 
                 <!-- <span class="header__logo--text">Jessore University<br>of Science and<br>Technology</span> -->
             </div>
-            <div class="col-8 header__navigation">
+            <div class="col-9 header__navigation">
                 <div class="header__navigation--secondary d-flex justify-content-end">
                     <nav> 
                         <nuxt-link v-for="(link, i) in sNav" :key="i" :to="link.path"> {{ link.title }} </nuxt-link>

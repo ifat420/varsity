@@ -64,21 +64,21 @@ export default {
                     title: 'List of Selected Candidates for the post of Assistant Professor and Lecturer of Petroleum and Mining Engineering ',
                     link: '#'
                 },
-                {
-                    time: Date.now(),
-                    title: 'List of Selected Candidates for the post of Assistant Professor and Lecturer of Petroleum and Mining Engineering ',
-                    link: '#'
-                },
-                {
-                    time: Date.now(),
-                    title: 'List of Selected Candidates for the post of Assistant Professor and Lecturer of Petroleum and Mining Engineering ',
-                    link: '#'
-                },
-                {
-                    time: Date.now(),
-                    title: 'List of Selected Candidates for the post of Assistant Professor and Lecturer of Petroleum and Mining Engineering ',
-                    link: '#'
-                }
+                // {
+                //     time: Date.now(),
+                //     title: 'List of Selected Candidates for the post of Assistant Professor and Lecturer of Petroleum and Mining Engineering ',
+                //     link: '#'
+                // },
+                // {
+                //     time: Date.now(),
+                //     title: 'List of Selected Candidates for the post of Assistant Professor and Lecturer of Petroleum and Mining Engineering ',
+                //     link: '#'
+                // },
+                // {
+                //     time: Date.now(),
+                //     title: 'List of Selected Candidates for the post of Assistant Professor and Lecturer of Petroleum and Mining Engineering ',
+                //     link: '#'
+                // }
             ]
         }
     }
