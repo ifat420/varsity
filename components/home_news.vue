@@ -32,19 +32,19 @@ export default {
                 {
                     src: '/07.jpg',
                     link: '#',
-                    heading: 'laborumSunt non sunt',
+                    heading: 'laborumSunt non sunt leum ke sidne yet',
                     time: Date.now()
                 },
                 {
                     src: '/14.jpg',
                     link: '#',
-                    heading: 'consectetur et cupidatat cillum ',
+                    heading: 'consectetur et cupidatat cillum lorem',
                     time: Date.now()
                 },
                 {
                     src: '/2.jpg',
                     link: '#',
-                    heading: 'Veniam laborum tempor labore non ',
+                    heading: 'Veniam laborum tempor labore non ipsum wep vijoram',
                     time: Date.now()
                 },
                 {

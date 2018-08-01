@@ -10,6 +10,9 @@ import faGlobe from '@fortawesome/fontawesome-free-solid/faGlobe'
 import faShoppingCart from '@fortawesome/fontawesome-free-solid/faShoppingCart'
 import faExclamationTriangle from '@fortawesome/fontawesome-free-solid/faExclamationTriangle'
 import faAngleDown from '@fortawesome/fontawesome-free-solid/faAngleDown'
+import faExternalLinkAlt from '@fortawesome/fontawesome-free-solid/faExternalLinkAlt'
+import faCalendarAlt from '@fortawesome/fontawesome-free-solid/faCalendarAlt'
+import faClock from '@fortawesome/fontawesome-free-solid/faClock'
 
 import faFacebookF from '@fortawesome/fontawesome-free-brands/faFacebookF' 
 import faFacebook from '@fortawesome/fontawesome-free-brands/faFacebook' 
@@ -45,4 +48,7 @@ fontawesome.library.add(faPinterest)
 fontawesome.library.add(faPinterestP) 
 fontawesome.library.add(faGooglePlus) 
 fontawesome.library.add(faGooglePlusG) 
+fontawesome.library.add(faExternalLinkAlt) 
+fontawesome.library.add(faCalendarAlt) 
+fontawesome.library.add(faClock) 
 //end font awesome

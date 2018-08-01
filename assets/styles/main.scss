@@ -9,6 +9,8 @@ html {
 body {  
     margin: auto; 
     font-family: 'Roboto', sans-serif; 
+    text-rendering: optimizeLegibility;
+    // text-rendering: geometricPrecision;
     // background-color: #f5f6fa;
     // background-color: $color-background;
 }
@@ -175,27 +177,46 @@ a {
 
     &__content {
         &--time {
-            display: block;
-            font-size: $font-size-small;
+            display: block; 
             font-size: $font-size-small;
             color: rgba(30, 30, 30, 0.7);
             font-weight: 400;
-            margin-top: 1rem;
+            margin-top: 1rem; 
+            &-i {
+                display: inline-block;
+                margin-right: .3rem;
+                color: $color-background-invert; 
+            }
+            &-w {
+                display: inline-block;
+                margin-right: 2rem;
+            }
         }
         &--heading {
             display: block;
             font-size: $font-size-header-small;
-            color: $color-text-weak;
+            color: $color-text;
             font-weight: 500;
-            margin-top: .5rem;
+            margin-top: 1rem;
             text-transform: uppercase;
+        }
+        &--des {
+            display: inline-block;
+            margin-top: 1rem;
+            font-size: $font-size-reg;
+            color: $color-text-weak;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #ccc;
         }
         &--link {
             display: inline-block;
-            margin-top: 1rem;
-            color: $color-text-strong-invert;
+            margin-top: .7rem;
+            color: $color-text-weak;
             font-size: $font-size-small;
+            text-transform: capitalize;
+            color: $color-text;
         }
+         
     }
 }
 
@@ -206,7 +227,7 @@ a {
         background: $color-background-invert;
         color: $color-text-invert; 
         padding-top: 1rem;
-        height: 62rem;
+        height: 90rem;
         overflow: hidden;
 
         & ul {
