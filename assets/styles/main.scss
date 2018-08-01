@@ -316,6 +316,40 @@ a {
 
 }
 
+.count {
+    text-align: center;
+    margin-top: 2.5rem;
+    padding: 5rem 1.5rem 4rem 1.5rem;
+    background: linear-gradient(0deg, rgba($color-background-shade, .6) 0%, rgba($color-background-shade, 0.6) 100%), url('~/45.jpg');
+    background-size: cover;
+    color: $color-text-strong-invert;
+    &__item {
+        background: $color-background-invert;
+        padding: 2.5rem 0;
+        &--number { 
+            font-size: 2.8rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+        &--text {
+            display: inline-block;
+            border-top: 1px solid $color-accent;
+            padding-top: 1rem;
+            font-size: $font-size-header-small;
+            text-transform: capitalize;
+            text-transform: uppercase;
+            font-weight: 300;
+        }
+    }
+    &__heading {
+        text-transform: unset;
+        border-left: 2px solid $color-accent;
+        padding-left: 1.5rem;
+        display: inline-block;
+        margin-bottom: 5.5rem;
+        font-weight: 300;
+    }
+}
 
 .footer {
     font-size: $font-size-reg;

@@ -12,8 +12,9 @@
         </div>
     </div>
     </div> 
-    <app-overview/>
     <app-count/>
+    <app-overview/> 
+    <app-depts />
     <app-gallery/> 
   </section>
 </template>
@@ -26,6 +27,7 @@ import workshop from '~/components/home_workshop'
 import gallery from '~/components/home_gallery'
 import overview from '~/components/home_overview'
 import count from '~/components/home_count'
+import depts from '~/components/home_depts'
 export default {
     layout: 'just',
     components: {
@@ -35,7 +37,8 @@ export default {
         'app-workshop': workshop,
         'app-gallery': gallery,
         'app-overview': overview,
-        'app-count': count
+        'app-count': count,
+        'app-depts': depts,
     },
     created() {
         console.log(this);
